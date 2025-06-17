@@ -1,0 +1,17 @@
+--- flexi_logger-0.29.8/Cargo.toml	1970-01-01T00:00:01+00:00
++++ flexi_logger-0.29.8/Cargo.toml	2025-06-17T16:01:07.268265+00:00
+@@ -363,7 +363,6 @@
+     "dep:serde_derive",
+ ]
+ syslog_writer = [
+-    "dep:libc",
+     "dep:hostname",
+ ]
+ textfilter = ["dep:regex"]
+@@ -374,6 +373,3 @@
+     "dep:tracing-subscriber",
+ ]
+ 
+-[target."cfg(linux)".dependencies.libc]
+-version = "^0.2.50"
+-optional = true
