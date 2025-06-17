@@ -31,11 +31,11 @@ This package contains library source intended for building other packages which
 use the "%{crate}" crate.
 
 %files          devel
-%doc %{crate_instdir}/README.md
-%doc %{crate_instdir}/CHANGELOG.md
-%doc %{crate_instdir}/CONTRIBUTING.md
-%license %{crate_instdir}/LICENSE-MIT
-%license %{crate_instdir}/LICENSE-APACHE
+%doc README.md
+%doc CHANGELOG.md
+%doc CONTRIBUTING.md
+%license LICENSE-MIT
+%license LICENSE-APACHE
 %{crate_instdir}/
 
 %package     -n %{name}+default-devel
