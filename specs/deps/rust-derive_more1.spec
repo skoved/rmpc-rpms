@@ -386,7 +386,8 @@ use the "unwrap" feature of the "%{crate}" crate.
 
 %if %{with check}
 %check
-%cargo_test -a
+# skip trybuild tests that fail due to missing test fixtures (from from fedora's rust-derive_more package)
+%cargo_test -a -- -- --exact --skip compile_fail
 %endif
 
 %changelog
