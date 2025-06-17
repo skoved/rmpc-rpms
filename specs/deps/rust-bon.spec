@@ -126,7 +126,7 @@ use the "std" feature of the "%{crate}" crate.
 %if %{with check}
 %check
 # skip trybuild tests that fail due to missing test fixtures (from from fedora's rust-derive_more package)
-%cargo_test -a -- -- --exact --skip integration
+%cargo_test -a -- --lib --bin --doc 
 %endif
 
 %changelog
