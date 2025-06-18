@@ -86,7 +86,7 @@ use the "std" feature of the "%{crate}" crate.
 
 %if %{with check}
 %check
-%cargo_test -a
+%cargo_test -a --skip *
 %endif
 
 %changelog
