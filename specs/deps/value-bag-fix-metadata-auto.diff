@@ -1,0 +1,11 @@
+--- value-bag-1.11.1/Cargo.toml	1970-01-01T00:00:01+00:00
++++ value-bag-1.11.1/Cargo.toml	2025-06-18T14:08:10.252924+00:00
+@@ -104,8 +104,3 @@
+ 
+ [dev-dependencies]
+ 
+-[target.'cfg(target_arch = "wasm32")'.dev-dependencies.wasm-bindgen]
+-version = "0.2"
+-
+-[target.'cfg(target_arch = "wasm32")'.dev-dependencies.wasm-bindgen-test]
+-version = "0.3"
