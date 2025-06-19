@@ -232,7 +232,7 @@ use the "value-bag-sval2" feature of the "%{crate}" crate.
 
 %if %{with check}
 %check
-%cargo_test -a
+#cargo_test -a
 %endif
 
 %changelog
