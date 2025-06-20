@@ -5,13 +5,12 @@
 %define debug_package %{nil}
 
 Name:           rmpc-git
-# renovate: datasource=github-releases depName=mierak/rmpc versioning=semver-coerced
 Version:        %(date --date=now '+%%Y.%%m.%%d')
 Release:        1%{?dist}
 Summary:        %{common_description}
 License:        BSD-3-Clause
 URL:            https://mierak.github.io/rmpc/
-Source0:        https://github.com/%{gh_user}/%{gh_repo}/archive/refs/heads/main.tar.gz
+Source0:        https://github.com/%{gh_user}/%{gh_repo}/archive/refs/heads/master.tar.gz
 BuildRequires:  cargo
 Requires:       mpd
 Requires:       cava
